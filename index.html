@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>George Athanasatos – Developer & Security Student</title>
+<meta name="description" content="Portfolio of George Athanasatos: web development, Linux server administration and security work, based in Montréal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F1F4F3; --surface:#FFFFFF; --ink:#12202E; --muted:#556575; --line:#CBD5DB; --accent:#1B4FD8; --accent-ink:#FFFFFF;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0F1720; --surface:#162230; --ink:#E7EDF2; --muted:#9AABB9; --line:#2A3A4A; --accent:#7FA2FF; --accent-ink:#0F1720; color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0F1720; --surface:#162230; --ink:#E7EDF2; --muted:#9AABB9; --line:#2A3A4A; --accent:#7FA2FF; --accent-ink:#0F1720; color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+nav{display:flex;gap:22px;flex-wrap:wrap;padding:22px 0;font-size:15px}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+header.hero{padding:56px 0 72px;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(2.8rem,9vw,6rem);font-weight:700;letter-spacing:-.03em;max-width:12ch}
+.pitch{font-size:clamp(1.15rem,2.6vw,1.45rem);max-width:34em;margin:28px 0 0;line-height:1.5}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-block;padding:12px 20px;border-radius:6px;font-weight:500;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.primary:hover{filter:brightness(1.1);background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.loc{color:var(--muted);margin-top:22px;font-size:15px}
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:36px;letter-spacing:-.02em}
+.row{display:grid;grid-template-columns:220px 1fr;gap:12px 40px;padding:28px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0;padding-top:0}
+.row h3{font-size:1.35rem;letter-spacing:-.01em}
+.meta{color:var(--muted);font-size:14.5px;margin-top:8px}
+.row ul{margin:0;padding-left:1.1em}
+.row li{margin:0 0 8px;max-width:62ch}
+.row p{margin:0 0 10px;max-width:62ch}
+.tag{display:inline-block;font-size:13.5px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 11px;margin:0 6px 6px 0;color:var(--muted)}
+.links{margin-top:10px;font-size:15px;display:flex;gap:18px;flex-wrap:wrap}
+.skills{display:grid;grid-template-columns:220px 1fr;gap:14px 40px;margin:0}
+.skills dt{font-family:"Bricolage Grotesque",sans-serif;font-weight:500;font-size:1.1rem}
+.skills dd{margin:0;color:var(--muted)}
+.contact p{max-width:46ch;margin:0 0 24px;font-size:1.15rem}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px}
+@media (max-width:720px){.row,.skills{grid-template-columns:1fr}.skills dd{margin-bottom:10px}header.hero{padding-top:28px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections">
+  <a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+</nav>
+
+<header class="hero">
+  <h1>George Athanasatos</h1>
+  <p class="pitch">I build web applications for real clients and I look for the ways they can break. Computer science diploma, cybersecurity certificate, and four years running a team on a busy retail floor.</p>
+  <div class="cta">
+    <a class="btn primary" href="mailto:georgeathanasatos13@gmail.com">Email me</a>
+    <a class="btn" href="https://github.com/GeorgeAthanasatos" rel="noopener">GitHub</a>
+  </div>
+  <p class="loc">Montréal, Québec · English (fluent) and French (proficient)</p>
+</header>
+</div>
+
+<section id="work">
+<div class="wrap">
+  <h2>Selected work</h2>
+
+  <article class="row">
+    <div>
+      <h3>Security audit of a production website</h3>
+      <div class="meta">Consultation SOS · 2024</div>
+    </div>
+    <div>
+      <p>After earlier incidents on the company site, I audited it, documented the vulnerabilities I found, and wrote mitigation recommendations. The team used them to shape its security roadmap.</p>
+      <div><span class="tag">Security auditing</span><span class="tag">Vulnerability reporting</span><span class="tag">Web security</span></div>
+    </div>
+  </article>
+
+  <article class="row">
+    <div>
+      <h3>514 Painting web application</h3>
+      <div class="meta">Team of 4 · Real client</div>
+    </div>
+    <div>
+      <ul>
+        <li>Full-stack, database-backed platform for a working painting business, with authenticated customer and admin workflows.</li>
+        <li>Service management and inquiry handling for the admin side.</li>
+        <li>Input validation and password hashing to protect against common web vulnerabilities.</li>
+        <li>Requirements changed as the client reacted to drafts. We ran short feedback cycles to keep the team aligned.</li>
+      </ul>
+      <div><span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">HTML/CSS</span><span class="tag">SQL database</span></div>
+    </div>
+  </article>
+
+  <article class="row">
+    <div>
+      <h3>Linux server on a VPS</h3>
+      <div class="meta">Personal infrastructure project</div>
+    </div>
+    <div>
+      <ul>
+        <li>Provisioned and administered a Debian Linux server on OVHcloud, entirely over SSH, with files moved by SFTP.</li>
+        <li>Automated server startup and kept long-running processes alive with Bash scripts and GNU Screen.</li>
+      </ul>
+      <div><span class="tag">Debian</span><span class="tag">SSH</span><span class="tag">Bash</span><span class="tag">OVHcloud</span></div>
+    </div>
+  </article>
+
+  <article class="row">
+    <div>
+      <h3>Websites for local businesses</h3>
+      <div class="meta">Self-initiated outreach</div>
+    </div>
+    <div>
+      <ul>
+        <li>Found about 50 local businesses with outdated or missing websites and contacted them by phone, email and social media.</li>
+        <li>Built a tailored mockup for each one before reaching out, so the pitch showed the improvement instead of describing it.</li>
+      </ul>
+      <div><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+      <div class="links"><a href="https://github.com/GeorgeAthanasatos/Websites-For-Clients" rel="noopener">View repository</a></div>
+    </div>
+  </article>
+
+  <article class="row">
+    <div>
+      <h3>Games and coursework</h3>
+      <div class="meta">Vanier College and client requests</div>
+    </div>
+    <div>
+      <ul>
+        <li>Three client-requested browser games at Consultation SOS (Tic-Tac-Toe, Snake, a 2D platformer), turned from verbal requirements into tested code.</li>
+        <li>Empirium, a Java game about a gladiator fighting for his freedom, built with a collaborator.</li>
+        <li>BugFixer, a C# project built with a collaborator.</li>
+        <li>A platform game for a game programming course, and coursework from an ethical hacking class.</li>
+      </ul>
+      <div class="links">
+        <a href="https://github.com/anodavid/empirium" rel="noopener">Empirium</a>
+        <a href="https://github.com/NicholasA2/BugFixer" rel="noopener">BugFixer</a>
+        <a href="https://github.com/GeorgeAthanasatos/GameProg2Assignment1" rel="noopener">Platform game</a>
+        <a href="https://github.com/GeorgeAthanasatos/Ethical-Hacking-Vanier" rel="noopener">Ethical hacking</a>
+      </div>
+    </div>
+  </article>
+</div>
+</section>
+
+<section id="experience">
+<div class="wrap">
+  <h2>Experience</h2>
+  <article class="row">
+    <div>
+      <h3>IT & Development Intern</h3>
+      <div class="meta">Consultation SOS<br>Jan – Jun 2024</div>
+    </div>
+    <div>
+      <ul>
+        <li>Main technical contact for customers: gathered requirements and iterated on their feedback.</li>
+        <li>Maintained and improved the production website, including customer-facing fixes.</li>
+        <li>Delivered three web apps on my own, and the security audit above.</li>
+      </ul>
+    </div>
+  </article>
+  <article class="row">
+    <div>
+      <h3>Meat Department Operations / Acting Manager</h3>
+      <div class="meta">IGA<br>Dec 2019 – present</div>
+    </div>
+    <div>
+      <ul>
+        <li>Co-manage a 10-person department and step in as acting manager, owning scheduling, priorities and accountability.</li>
+        <li>Train new hires and keep production standards consistent.</li>
+        <li>Handle inventory, ordering and waste, adjusting production to demand in real time.</li>
+        <li>Resolve customer complaints directly and close the department independently.</li>
+      </ul>
+    </div>
+  </article>
+</div>
+</section>
+
+<section id="skills">
+<div class="wrap">
+  <h2>Skills and education</h2>
+  <dl class="skills">
+    <dt>Languages</dt><dd>Java, C#, Python, JavaScript, PHP, HTML/CSS</dd>
+    <dt>Systems and tools</dt><dd>Linux/Unix, Git and GitHub, SSH, Bash, OVHcloud, PuTTY, WinSCP</dd>
+    <dt>Domains</dt><dd>Networking, databases, cybersecurity, web development, object-oriented programming</dd>
+    <dt>Education</dt><dd>Concordia University: Urban Planning degree (in progress, 2025 – present)<br>Concordia University: Cybersecurity Certificate (2024 – 2025)<br>Vanier College: Computer Science DCS (2020 – 2024)</dd>
+    <dt>Outside work</dt><dd>Flag football (team captain), recreational soccer, Counter-Strike and esports, comic books</dd>
+  </dl>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="wrap">
+  <h2>Contact</h2>
+  <p>Open to roles in software development, security and IT. The quickest way to reach me is email.</p>
+  <div class="cta">
+    <a class="btn primary" href="mailto:georgeathanasatos13@gmail.com">georgeathanasatos13@gmail.com</a>
+    <a class="btn" href="https://github.com/GeorgeAthanasatos" rel="noopener">github.com/GeorgeAthanasatos</a>
+  </div>
+</div>
+</section>
+
+<footer><div class="wrap">© 2026 George Athanasatos</div></footer>
+</body>
+</html>
